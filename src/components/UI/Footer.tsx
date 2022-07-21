@@ -2,7 +2,19 @@ import React from "react";
 import styles from "./Footer.module.css";
 const Logo = require("../../images/navbrand.png");
 
+// TODO: Implement an API that sends emails to my email from within webpage, (replace email copy to
+// clipboard button )
+
 export default function Footer() {
+  function copyToClipboard(textCopy: string, type: string): void {
+    navigator.clipboard.writeText(textCopy);
+    if (type === "discord") {
+      alert("Discord username copied.");
+    } else if (type === "email") {
+      alert("Email address copied to clipboard!");
+    }
+  }
+
   return (
     <div className={styles.footer}>
       <div
@@ -31,16 +43,36 @@ export default function Footer() {
           </div>
           <ul className={styles["footer--tags"]}>
             <li>
-              <a href="#">Github</a>
+              <a
+                className={styles.link}
+                href="https://github.com/Melton-Paul"
+                target="_blank"
+              >
+                Github
+              </a>
             </li>
             <li>
-              <a href="#">LinkedIn</a>
+              <a
+                className={styles.link}
+                href="https://www.linkedin.com/in/paul-m-999361237/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
             </li>
-            <li>
-              <a href="#">Discord</a>
+            <li
+              className={styles.link}
+              onClick={() => copyToClipboard("Paul Blart#8933", "discord")}
+            >
+              Discord
             </li>
-            <li>
-              <a href="#">Email</a>
+            <li
+              className={styles.link}
+              onClick={() =>
+                copyToClipboard("melton.paul@hotmail.com", "email")
+              }
+            >
+              Email
             </li>
           </ul>
         </div>

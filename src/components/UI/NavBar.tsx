@@ -21,8 +21,8 @@ export default function NavBar() {
             </Link>
           </li>
           <li>
-            <Link className={styles["router-links"]} to="/work">
-              Work
+            <Link className={styles["router-links"]} to="/projects">
+              Projects
             </Link>
           </li>
           <li>
