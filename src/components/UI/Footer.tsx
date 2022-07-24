@@ -9,7 +9,7 @@ export default function Footer() {
   function copyToClipboard(textCopy: string, type: string): void {
     navigator.clipboard.writeText(textCopy);
     if (type === "discord") {
-      alert("Discord username copied.");
+      alert("Discord username copied to clipboard.");
     } else if (type === "email") {
       alert("Email address copied to clipboard!");
     }
