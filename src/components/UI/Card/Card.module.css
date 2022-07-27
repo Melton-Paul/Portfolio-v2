@@ -1,0 +1,6 @@
+.card {
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  width: 100%;
+  align-items: center;
+}
