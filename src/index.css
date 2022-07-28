@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;800&family=Merriweather:wght@400;700&display=swap");
 
 * {
   scroll-behavior: smooth;
@@ -17,6 +17,7 @@ body {
   overflow-x: hidden;
   cursor: default;
   line-height: 1.5;
+  color: #212427;
 }
 
 main {
@@ -34,4 +35,9 @@ main {
 .grid--1x2 {
   display: grid;
   grid-template-columns: repeat(1, fr);
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Merriweather", serif;
 }

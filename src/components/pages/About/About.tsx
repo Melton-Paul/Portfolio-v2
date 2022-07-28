@@ -8,7 +8,7 @@ export default function About() {
   return (
     <section className={styles.about}>
       <h2>About</h2>
-      <ul className={styles["about--information"] + " list"}>
+      <ul className="list">
         <li className={styles["about--information__section"]}>
           <p className={styles["about--greeting"]}>
             I am a self-taught Front-End Developer, with a passion for clean,
