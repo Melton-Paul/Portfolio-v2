@@ -1,0 +1,43 @@
+.work-list {
+  width: 100%;
+}
+
+.work-list__item {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.work-title {
+  display: flex;
+  padding-bottom: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #5c5c5c;
+}
+
+.work-title h3 {
+  margin: 0;
+  margin-right: 1rem;
+}
+
+.work-job {
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.work-date {
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+
+.work-desc {
+  margin: 1rem 0;
+}
+
+.work-list li {
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 450px;
+}
