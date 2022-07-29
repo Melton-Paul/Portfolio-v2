@@ -6,6 +6,10 @@ const Logo = require("../../images/navbrand.png");
 // clipboard button )
 
 export default function Footer() {
+  function toTop() {
+    window.scrollTo(0, 0);
+  }
+
   function copyToClipboard(textCopy: string, type: string): void {
     navigator.clipboard.writeText(textCopy);
     if (type === "discord") {
@@ -29,13 +33,13 @@ export default function Footer() {
       <div className={styles.background}>
         <div className={styles["footer--content"]}>
           <div className={styles["footer-copyright"]}>
-            <a href="#">
-              <img
-                className={styles["footer-brand"]}
-                src={Logo}
-                alt="Melton Logo"
-              />
-            </a>
+            <img
+              className={styles["footer-brand"]}
+              src={Logo}
+              alt="Melton Logo"
+              onClick={toTop}
+            />
+
             <p className={styles["footer-copyright__text"]}>
               Created by Paul Melton <br />
               <span className={styles.small}>Copyright &copy; 2022</span>

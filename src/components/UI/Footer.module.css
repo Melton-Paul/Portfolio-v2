@@ -26,6 +26,7 @@
 
 .footer-brand {
   transform: translateY(5px);
+  cursor: pointer;
 }
 .footer-brand:hover {
   opacity: 1;
