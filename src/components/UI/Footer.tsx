@@ -47,6 +47,7 @@ export default function Footer() {
                 className={styles.link}
                 href="https://github.com/Melton-Paul"
                 target="_blank"
+                rel="noreferrer"
               >
                 Github
               </a>
@@ -56,6 +57,7 @@ export default function Footer() {
                 className={styles.link}
                 href="https://www.linkedin.com/in/paul-m-999361237/"
                 target="_blank"
+                rel="noreferrer"
               >
                 LinkedIn
               </a>

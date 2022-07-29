@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../../UI/Card/Card";
 import styles from "./Projects.module.css";
+import Button from "../../UI/Button/Button";
 const ContactPagePreview = require("../../../images/contactbookprev.png");
 
 export default function Projects() {
@@ -45,22 +46,22 @@ export default function Projects() {
                 </p>
               </div>
               <div className={styles["button-container"]}>
-                <a
+                <Button
                   href="https://twitchcontacts.netlify.app/"
                   target="_blank"
                   className={styles.button}
-                  rel="noreferrer"
+                  link={true}
                 >
                   Preview
-                </a>
-                <a
+                </Button>
+                <Button
                   href="https://github.com/Melton-Paul/Twitch-Contact-Book"
                   target="_blank"
                   className={styles.button}
-                  rel="noreferrer"
+                  link={true}
                 >
                   Github Code
-                </a>
+                </Button>
               </div>
             </div>
           </Card>
