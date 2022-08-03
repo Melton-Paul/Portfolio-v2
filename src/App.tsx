@@ -1,6 +1,4 @@
-import React from "react";
 import { Routes, Route } from "react-router";
-import Default from "./components/pages/Default/Default";
 import Projects from "./components/pages/Projects/Projects";
 import Contact from "./components/pages/Contact/Contact";
 import About from "./components/pages/About/About";
@@ -13,11 +11,11 @@ function App() {
       <NavBar />
       <main>
         <Routes>
-          <Route path="/" element={<Default />} />
+          <Route path="/" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
-          <Route path="*" element={<Default />} />
+          <Route path="*" element={<About />} />
         </Routes>
       </main>
       <Footer />
