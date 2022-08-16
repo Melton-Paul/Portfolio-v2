@@ -1,0 +1,17 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.about--greeting {
+  text-align: center;
+  line-height: 1.7;
+  padding: 0 1rem;
+  margin-top: 0;
+  width: 100%;
+}
+.about--greeting__button {
+  margin-top: 2rem;
+}

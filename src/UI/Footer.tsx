@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
-const Logo = require("../../images/navbrand.png");
+const Logo = require("../images/navbrand.png");
 
 // TODO: Implement an API that sends emails to my email from within webpage, (replace email copy to
 // clipboard button )

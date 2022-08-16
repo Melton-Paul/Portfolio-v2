@@ -2,14 +2,14 @@ import React from "react";
 import Card from "../../UI/Card/Card";
 import Button from "../../UI/Button/Button";
 import styles from "./Projects.module.css";
-const ContactPagePreview = require("../../../images/contactbookprev.png");
-const MovieListPreview = require("../../../images/movielist.png");
-const QuizzicalPreview = require("../../../images/quizzical.png");
-const WebConceptPreview = require("../../../images/webconcept.png");
+const ContactPagePreview = require("../../images/contactbookprev.png");
+const MovieListPreview = require("../../images/movielist.png");
+const QuizzicalPreview = require("../../images/quizzical.png");
+const WebConceptPreview = require("../../images/webconcept.png");
 
 export default function Projects() {
   return (
-    <section className={styles.projects}>
+    <article className={styles.projects}>
       <div className={styles["projects-title"]}>
         <p>
           This page is constantly being updated as I learn new concepts and
@@ -20,10 +20,16 @@ export default function Projects() {
         <li>
           <Card className={styles.project}>
             <div className={styles.img}>
-              <img
-                src={ContactPagePreview}
-                alt="A preview of Twitch Contact Page website."
-              />
+              <a
+                href="https://twitchcontacts.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={ContactPagePreview}
+                  alt="A preview of Twitch Contact Page website."
+                />
+              </a>
             </div>
             <div className={styles["project-information"]}>
               <h3 className={styles["project-title"]}>Twitch Contacts</h3>
@@ -71,10 +77,16 @@ export default function Projects() {
         <li>
           <Card className={styles.project}>
             <div className={styles.img}>
-              <img
-                src={MovieListPreview}
-                alt="A preview of Movie List Maker website."
-              />
+              <a
+                href="https://movielistmaker.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={MovieListPreview}
+                  alt="A preview of Movie List Maker website."
+                />
+              </a>
             </div>
             <div className={styles["project-information"]}>
               <h3 className={styles["project-title"]}>Movie Watchlist</h3>
@@ -121,10 +133,16 @@ export default function Projects() {
         <li>
           <Card className={styles.project}>
             <div className={styles.img}>
-              <img
-                src={QuizzicalPreview}
-                alt="A preview of Movie List Maker website."
-              />
+              <a
+                href="https://quizzicalme.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={QuizzicalPreview}
+                  alt="A preview of Movie List Maker website."
+                />
+              </a>
             </div>
             <div className={styles["project-information"]}>
               <h3 className={styles["project-title"]}>Quizzical</h3>
@@ -169,10 +187,16 @@ export default function Projects() {
         <li>
           <Card className={styles.project}>
             <div className={styles.img}>
-              <img
-                src={WebConceptPreview}
-                alt="A preview of Movie List Maker website."
-              />
+              <a
+                href="https://webhostconcept.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={WebConceptPreview}
+                  alt="A preview of Movie List Maker website."
+                />
+              </a>
             </div>
             <div className={styles["project-information"]}>
               <h3 className={styles["project-title"]}>
@@ -214,6 +238,6 @@ export default function Projects() {
           </Card>
         </li>
       </ul>
-    </section>
+    </article>
   );
 }

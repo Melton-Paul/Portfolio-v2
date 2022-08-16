@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
-const Logo = require("../../images/navbrand.png");
+const Logo = require("../images/navbrand.png");
 
 export default function NavBar() {
   return (

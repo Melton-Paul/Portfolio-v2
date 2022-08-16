@@ -1,31 +1,18 @@
 import React from "react";
-import styles from "./About.module.css";
-import TechnologyList from "./AboutSections/TechnologyList";
+import styles from "./Welcome.module.css";
+import TechnologyList from "../TechnologyList/TechnologyList";
 import Projects from "../Projects/Projects";
+import About from "../About/About";
 import Button from "../../UI/Button/Button";
 import { Link } from "react-router-dom";
 
-export default function About() {
+export default function Welcome() {
   return (
-    <section className={styles.about}>
+    <section className={styles.welcome}>
       <h2>Welcome</h2>
       <ul className="list">
         <li className={styles["about--information__section"]}>
-          <p className={styles["about--greeting"]}>
-            I am a self-taught Front-End Developer, with a passion for clean,
-            reusable, and adaptable code. <br /> <br />I am open to learning new
-            languages or adapting to the needs of a team- and being that I am
-            self taught, means I can pick up languages on the fly! <br /> <br />
-            For more information on me, check out my LinkedIn
-          </p>
-          <Button
-            className={styles["about--greeting__button"]}
-            link={true}
-            href="https://www.linkedin.com/in/paul-m-999361237/"
-            target="_blank"
-          >
-            Go to LinkedIn
-          </Button>
+          <About />
         </li>
         <li className={styles["about--information__section"]}>
           <h3 className={styles["section-title"]}>Technologies</h3>

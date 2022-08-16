@@ -5,7 +5,7 @@ import Button from "../../UI/Button/Button";
 
 export default function Contact() {
   return (
-    <div className={styles.contact}>
+    <article className={styles.contact}>
       <h2>Hire Me!</h2>
       <div className={styles["contact--options__container"]}>
         <EmailForm />
@@ -48,6 +48,6 @@ export default function Contact() {
           </ul>
         </div>
       </div>
-    </div>
+    </article>
   );
 }

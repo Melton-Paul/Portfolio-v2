@@ -1,9 +1,8 @@
 import { Routes, Route } from "react-router";
-import Projects from "./components/pages/Projects/Projects";
-import Contact from "./components/pages/Contact/Contact";
-import About from "./components/pages/About/About";
-import NavBar from "./components/UI/NavBar";
-import Footer from "./components/UI/Footer";
+import NavBar from "./UI/NavBar";
+import Footer from "./UI/Footer";
+import WelcomePage from "./pages/Welcome";
+import ContactPage from "./pages/Contact";
 
 function App() {
   return (
@@ -11,11 +10,10 @@ function App() {
       <NavBar />
       <main>
         <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<About />} />
+          <Route path="/" element={<WelcomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/welcome" element={<WelcomePage />} />
+          <Route path="*" element={<WelcomePage />} />
         </Routes>
       </main>
       <Footer />
