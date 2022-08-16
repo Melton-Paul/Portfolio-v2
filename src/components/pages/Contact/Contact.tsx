@@ -6,7 +6,7 @@ import Button from "../../UI/Button/Button";
 export default function Contact() {
   return (
     <div className={styles.contact}>
-      <h2>Hire Me</h2>
+      <h2>Hire Me!</h2>
       <div className={styles["contact--options__container"]}>
         <EmailForm />
         <div className={styles["contact--options"]}>

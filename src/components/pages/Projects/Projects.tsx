@@ -11,7 +11,6 @@ export default function Projects() {
   return (
     <section className={styles.projects}>
       <div className={styles["projects-title"]}>
-        <h2>Projects</h2>
         <p>
           This page is constantly being updated as I learn new concepts and
           develop more projects.
@@ -188,8 +187,9 @@ export default function Projects() {
               <div className={styles["project-information__section"]}>
                 <h4>Description</h4>
                 <p>
-                  A pure HTML and CSS brochure website. This application focuses
-                  solely on design, responsiveness, and user experience.
+                  A simple and pure HTML and CSS brochure website. This
+                  application focuses solely on design, responsiveness, and user
+                  experience.
                 </p>
               </div>
               <div className={styles["button-container"]}>

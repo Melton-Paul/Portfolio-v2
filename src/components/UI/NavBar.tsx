@@ -17,14 +17,10 @@ export default function NavBar() {
         <ul className={styles["navbar-links"]}>
           <li>
             <Link className={styles["router-links"]} to="/about">
-              About
+              Welcome
             </Link>
           </li>
-          <li>
-            <Link className={styles["router-links"]} to="/projects">
-              Projects
-            </Link>
-          </li>
+
           <li>
             <Link className={styles["router-links"]} to="/contact">
               Contact

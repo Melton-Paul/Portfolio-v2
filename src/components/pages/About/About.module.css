@@ -5,7 +5,7 @@
   width: 100%;
   margin: 0 auto;
   margin-top: 6rem;
-  max-width: 500px;
+  max-width: 900px;
 }
 
 .about--information__section {
@@ -13,9 +13,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 0;
+  margin: 6rem 0;
 }
 
+.about--information__section:first-of-type {
+  margin-top: 0;
+}
 .about--greeting {
   text-align: center;
   line-height: 1.7;
@@ -23,7 +26,21 @@
   margin-top: 0;
   width: 100%;
 }
-
+.about--greeting__button {
+  margin-top: 2rem;
+}
 .section-title {
-  margin-bottom: 3rem;
+  font-size: 1.7rem;
+}
+
+.CTA {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+.CTA-button {
+  padding: 1rem 0;
+  font-size: 1.1rem;
 }

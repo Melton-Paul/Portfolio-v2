@@ -13,7 +13,7 @@ const Button: React.FC<{
   if (props.link) {
     return (
       <a
-        className={styles.button}
+        className={styles.button + " " + props.className}
         href={props.href}
         target={props.target || ""}
       >
