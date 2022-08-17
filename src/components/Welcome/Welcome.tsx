@@ -11,7 +11,7 @@ export default function Welcome() {
   function sendAnalytics() {
     ReactGA.event({
       category: "Button Clicks",
-      action: "Sign Up",
+      action: "Contact",
     });
   }
 
