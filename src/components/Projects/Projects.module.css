@@ -49,6 +49,7 @@
   gap: 0 0.5rem;
   max-width: 300px;
   flex-wrap: wrap;
+  color: black;
 }
 
 .project-information__toolbox li {

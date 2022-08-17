@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../../UI/Card/Card";
 import Button from "../../UI/Button/Button";
 import styles from "./Projects.module.css";
+import ToolTip from "../../UI/ToolTip/ToolTip";
 const ContactPagePreview = require("../../images/contactbookprev.png");
 const MovieListPreview = require("../../images/movielist.png");
 const QuizzicalPreview = require("../../images/quizzical.png");
@@ -54,22 +55,26 @@ export default function Projects() {
                 </p>
               </div>
               <div className={styles["button-container"]}>
-                <Button
-                  href="https://twitchcontacts.netlify.app/"
-                  target="_blank"
-                  className={styles.button}
-                  link={true}
-                >
-                  Preview
-                </Button>
-                <Button
-                  href="https://github.com/Melton-Paul/Twitch-Contact-Book"
-                  target="_blank"
-                  className={styles.button}
-                  link={true}
-                >
-                  Github Code
-                </Button>
+                <ToolTip content="Opens Project in new tab">
+                  <Button
+                    href="https://twitchcontacts.netlify.app/"
+                    target="_blank"
+                    className={styles.button}
+                    link={true}
+                  >
+                    Preview
+                  </Button>
+                </ToolTip>
+                <ToolTip content="Opens Github in new tab">
+                  <Button
+                    href="https://github.com/Melton-Paul/Twitch-Contact-Book"
+                    target="_blank"
+                    className={styles.button}
+                    link={true}
+                  >
+                    Github Code
+                  </Button>
+                </ToolTip>
               </div>
             </div>
           </Card>
@@ -110,22 +115,26 @@ export default function Projects() {
                 </p>
               </div>
               <div className={styles["button-container"]}>
-                <Button
-                  href="https://movielistmaker.netlify.app/"
-                  target="_blank"
-                  className={styles.button}
-                  link={true}
-                >
-                  Preview
-                </Button>
-                <Button
-                  href="https://github.com/Melton-Paul/Movie-Finder-React-"
-                  target="_blank"
-                  className={styles.button}
-                  link={true}
-                >
-                  Github Code
-                </Button>
+                <ToolTip content="Opens Project in new tab">
+                  <Button
+                    href="https://movielistmaker.netlify.app/"
+                    target="_blank"
+                    className={styles.button}
+                    link={true}
+                  >
+                    Preview
+                  </Button>
+                </ToolTip>
+                <ToolTip content="Opens Github in new tab">
+                  <Button
+                    href="https://github.com/Melton-Paul/Movie-Finder-React-"
+                    target="_blank"
+                    className={styles.button}
+                    link={true}
+                  >
+                    Github Code
+                  </Button>
+                </ToolTip>
               </div>
             </div>
           </Card>
@@ -164,22 +173,26 @@ export default function Projects() {
                 </p>
               </div>
               <div className={styles["button-container"]}>
-                <Button
-                  href="https://quizzicalme.netlify.app"
-                  target="_blank"
-                  className={styles.button}
-                  link={true}
-                >
-                  Preview
-                </Button>
-                <Button
-                  href="https://github.com/Melton-Paul/Quizzical"
-                  target="_blank"
-                  className={styles.button}
-                  link={true}
-                >
-                  Github Code
-                </Button>
+                <ToolTip content="Opens Project in new tab">
+                  <Button
+                    href="https://quizzicalme.netlify.app"
+                    target="_blank"
+                    className={styles.button}
+                    link={true}
+                  >
+                    Preview
+                  </Button>
+                </ToolTip>
+                <ToolTip content="Opens Github in new tab">
+                  <Button
+                    href="https://github.com/Melton-Paul/Quizzical"
+                    target="_blank"
+                    className={styles.button}
+                    link={true}
+                  >
+                    Github Code
+                  </Button>
+                </ToolTip>
               </div>
             </div>
           </Card>
@@ -217,22 +230,26 @@ export default function Projects() {
                 </p>
               </div>
               <div className={styles["button-container"]}>
-                <Button
-                  href="https://webhostconcept.netlify.app/"
-                  target="_blank"
-                  className={styles.button}
-                  link={true}
-                >
-                  Preview
-                </Button>
-                <Button
-                  href="https://github.com/Melton-Paul/WebHostConcept"
-                  target="_blank"
-                  className={styles.button}
-                  link={true}
-                >
-                  Github Code
-                </Button>
+                <ToolTip content="Opens Project in new tab">
+                  <Button
+                    href="https://webhostconcept.netlify.app/"
+                    target="_blank"
+                    className={styles.button}
+                    link={true}
+                  >
+                    Preview
+                  </Button>
+                </ToolTip>
+                <ToolTip content="Opens Github in new tab">
+                  <Button
+                    href="https://github.com/Melton-Paul/WebHostConcept"
+                    target="_blank"
+                    className={styles.button}
+                    link={true}
+                  >
+                    Github Code
+                  </Button>
+                </ToolTip>
               </div>
             </div>
           </Card>

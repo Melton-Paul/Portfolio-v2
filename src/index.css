@@ -26,8 +26,13 @@ body {
   --color-input: white;
   --color-tertiary: aliceblue;
   --color-footer: aliceblue;
+  --tooltip-text-color: white;
+  --tooltip-background-color: black;
+  --tooltip-margin: 30px;
+  --tooltip-arrow-size: 6px;
   color: var(var(--color-text));
   background: var(--color-background);
+  transition: 0.3s all;
 }
 
 body.dark {
@@ -35,7 +40,7 @@ body.dark {
   --color-black: white;
   --color-text: #bbbcc2;
   --color-button: #bbbcc2;
-  --color-accent: black;
+  --color-accent: rgb(228, 228, 228);
   --color-footer: #242633;
   --color-tertiary: rgb(85, 107, 126);
   --color-logo: invert(100%) sepia(1%) saturate(548%) hue-rotate(355deg)

@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import ToolTip from "./ToolTip/ToolTip";
 const Logo = require("../images/navbrand.png");
-
-// TODO: Implement an API that sends emails to my email from within webpage, (replace email copy to
-// clipboard button )
 
 export default function Footer() {
   function toTop() {
@@ -47,38 +45,42 @@ export default function Footer() {
           </div>
           <ul className={styles["footer--tags"]}>
             <li>
-              <a
-                className={styles.link}
-                href="https://github.com/Melton-Paul"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Github
-              </a>
+              <ToolTip content="Open Github in new tab">
+                <a
+                  className={styles.link}
+                  href="https://github.com/Melton-Paul"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github
+                </a>
+              </ToolTip>
             </li>
             <li>
-              <a
-                className={styles.link}
-                href="https://www.linkedin.com/in/paul-m-999361237/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn
-              </a>
+              <ToolTip content="Opens LinkedIn in new tab">
+                <a
+                  className={styles.link}
+                  href="https://www.linkedin.com/in/paul-m-999361237/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </ToolTip>
+            </li>
+            <li onClick={() => copyToClipboard("Paul Blart#8933", "discord")}>
+              <ToolTip content="Copies Discord username to clipboard">
+                <span className={styles.link}>Discord</span>
+              </ToolTip>
             </li>
             <li
-              className={styles.link}
-              onClick={() => copyToClipboard("Paul Blart#8933", "discord")}
-            >
-              Discord
-            </li>
-            <li
-              className={styles.link}
               onClick={() =>
                 copyToClipboard("melton.paul@hotmail.com", "email")
               }
             >
-              Email
+              <ToolTip content="Copies Email to Clipboard">
+                <span className={styles.link}>Email</span>
+              </ToolTip>
             </li>
           </ul>
         </div>
