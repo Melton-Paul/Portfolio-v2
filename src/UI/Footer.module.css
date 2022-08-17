@@ -10,7 +10,7 @@
 
 .footer .background {
   width: 100vw;
-  background-color: var(--color-tertiary);
+  background-color: var(--color-footer);
   height: 12rem;
 }
 
@@ -27,6 +27,8 @@
 .footer-brand {
   transform: translateY(5px);
   cursor: pointer;
+  filter: var(--color-logo);
+  opacity: 0.7;
 }
 .footer-brand:hover {
   opacity: 1;
@@ -41,7 +43,9 @@
 .footer-copyright__text {
   font-size: 0.7rem;
   opacity: 0.7;
+  color: var(--color-text);
 }
+
 .footer-copyright__text .small {
   font-size: 0.6rem;
 }
@@ -59,7 +63,7 @@
 .footer--tags a:visited {
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: var(--color-text);
   opacity: 0.9;
   font-size: 0.85rem;
   letter-spacing: 1.2px;
