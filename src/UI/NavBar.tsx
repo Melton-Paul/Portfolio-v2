@@ -16,7 +16,7 @@ export default function NavBar() {
         </Link>
         <ul className={styles["navbar-links"]}>
           <li>
-            <Link className={styles["router-links"]} to="/about">
+            <Link className={styles["router-links"]} to="/">
               Welcome
             </Link>
           </li>
