@@ -6,6 +6,7 @@ import ContactPage from "./pages/Contact";
 import ReactGA from "react-ga";
 const TRACKING_ID = "UA-237779882-1";
 ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   return (

@@ -5,8 +5,16 @@ import Projects from "../Projects/Projects";
 import About from "../About/About";
 import Button from "../../UI/Button/Button";
 import { Link } from "react-router-dom";
+import ReactGA from "react-ga";
 
 export default function Welcome() {
+  function sendAnalytics() {
+    ReactGA.event({
+      category: "Button Clicks",
+      action: "Sign Up",
+    });
+  }
+
   return (
     <section className={styles.welcome}>
       <h2>Welcome</h2>
@@ -23,7 +31,7 @@ export default function Welcome() {
           <Projects />
         </li>
         <li className={styles["about--information__section"]}>
-          <Link to="/contact" className={styles.CTA}>
+          <Link to="/contact" className={styles.CTA} onClick={sendAnalytics}>
             <h3>Thanks for your interest in me!</h3>
             <Button className={styles["CTA-button"]}>Get In Contact</Button>
           </Link>
