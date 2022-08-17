@@ -54,7 +54,7 @@
 .project-information__toolbox li {
   font-size: 0.9rem;
   padding: 0.5rem;
-  background: lavender;
+  background: var(--color-accent);
   border-radius: 5px;
   margin-right: 0.2rem;
   margin-bottom: 0.7rem;

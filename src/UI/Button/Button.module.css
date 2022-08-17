@@ -6,7 +6,7 @@
   cursor: pointer;
   border-radius: 5px;
   background: black;
-  color: white;
+  color: var(--color-button);
   text-decoration: none;
   border: 1px solid black;
   transition: 0.15s all;

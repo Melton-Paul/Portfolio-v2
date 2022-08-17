@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
+import ThemeChange from "./ThemeChange/ThemeChange";
 const Logo = require("../images/navbrand.png");
 
 export default function NavBar() {
@@ -20,11 +21,13 @@ export default function NavBar() {
               Welcome
             </Link>
           </li>
-
           <li>
             <Link className={styles["router-links"]} to="/contact">
               Contact
             </Link>
+          </li>
+          <li>
+            <ThemeChange />
           </li>
         </ul>
       </div>

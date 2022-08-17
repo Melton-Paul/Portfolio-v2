@@ -10,7 +10,7 @@
 
 .footer .background {
   width: 100vw;
-  background-color: aliceblue;
+  background-color: var(--color-tertiary);
   height: 12rem;
 }
 

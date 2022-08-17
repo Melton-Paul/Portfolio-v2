@@ -1,6 +1,6 @@
 .card {
   padding: 0.5rem 1rem;
-  border: 2px solid black;
+  border: 2px solid var(--color-black);
   width: 100%;
   align-items: center;
 }

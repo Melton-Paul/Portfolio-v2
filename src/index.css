@@ -16,8 +16,29 @@ body {
   font-family: "Merriweather Sans", sans-serif;
   cursor: default;
   line-height: 1.5;
-  color: #212427;
   overflow-x: hidden;
+  --color-background: white;
+  --color-black: black;
+  --color-text: #212427;
+  --color-button: white;
+  --color-accent: lavender;
+  --color-logo: none;
+  --color-input: white;
+  --color-tertiary: aliceblue;
+  color: var(var(--color-text));
+  background: var(--color-background);
+}
+
+body.dark {
+  --color-background: #333647;
+  --color-black: white;
+  --color-text: #bbbcc2;
+  --color-button: #bbbcc2;
+  --color-accent: black;
+  --color-tertiary: rgb(85, 107, 126);
+  --color-logo: invert(100%) sepia(1%) saturate(548%) hue-rotate(355deg)
+    brightness(117%) contrast(100%);
+  --color-input: rgb(241, 237, 237);
 }
 
 main {
@@ -49,7 +70,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #212427;
+  color: var(--color-text);
   margin: 0;
   margin-bottom: 1.5rem;
 }

@@ -17,13 +17,10 @@ export default function Welcome() {
 
   return (
     <section className={styles.welcome}>
-      <h2>Welcome</h2>
+      <About />
       <ul className="list">
         <li className={styles["about--information__section"]}>
-          <About />
-        </li>
-        <li className={styles["about--information__section"]}>
-          <h3 className={styles["section-title"]}>Technologies</h3>
+          <h3 className={styles["section-title"]}>Technologies </h3>
           <TechnologyList />
         </li>
         <li className={styles["about--information__section"]}>

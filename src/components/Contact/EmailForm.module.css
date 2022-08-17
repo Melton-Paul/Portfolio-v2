@@ -1,5 +1,5 @@
 .form {
-  background-color: aliceblue;
+  background-color: var(--color-tertiary);
   border-radius: 5px;
   padding: 1rem;
   width: 100%;
@@ -16,11 +16,15 @@
 .form .input--section label {
   margin-bottom: 1rem;
   font-weight: 300;
+  color: var(--color-text);
 }
 
 .form input,
 form textarea {
   font-size: 1.2rem;
+  background: var(--color-input);
+  color: black;
+  border: none;
 }
 
 .form input[type="text"],
