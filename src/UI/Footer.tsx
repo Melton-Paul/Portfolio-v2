@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
           <ul className={styles["footer--tags"]}>
             <li>
-              <ToolTip content="Open Github in new tab">
+              <ToolTip content="Opens Github in new tab">
                 <a
                   className={styles.link}
                   href="https://github.com/Melton-Paul"
