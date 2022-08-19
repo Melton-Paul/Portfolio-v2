@@ -2,9 +2,9 @@ import React, { ReactNode } from "react";
 import styles from "./Button.module.css";
 
 const Button: React.FC<{
-  className: string;
+  className?: string;
   children: ReactNode;
-  onClick?: ReactNode;
+  onClick?: any;
   disabled?: boolean;
   link?: boolean;
   href?: string;

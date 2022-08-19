@@ -33,13 +33,33 @@ form textarea {
 }
 
 .form textarea {
-  width: 100%;
+  max-width: 100%;
+  min-height: 2.5rem;
+  max-height: 390px;
+  resize: vertical;
   padding: 0.5rem;
   height: 8rem;
+  margin-bottom: 1rem;
 }
 .button {
   font-size: 0.9rem;
-  margin: 1rem 0;
+  margin: 1r;
+}
+
+.form-success__container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  text-align: center;
+}
+.form-success__container h3 {
+  font-size: 1.7rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+}
+.form-success__container p {
+  font-size: 1.2rem;
+  line-height: 2;
 }
 
 @media screen and (min-width: 768px) {
