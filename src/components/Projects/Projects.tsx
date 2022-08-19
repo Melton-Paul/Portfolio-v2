@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../../UI/Card/Card";
 import Button from "../../UI/Button/Button";
 import styles from "./Projects.module.css";
@@ -6,7 +5,7 @@ import ToolTip from "../../UI/ToolTip/ToolTip";
 const ContactPagePreview = require("../../images/contactbookprev.png");
 const MovieListPreview = require("../../images/movielist.png");
 const QuizzicalPreview = require("../../images/quizzical.png");
-const WebConceptPreview = require("../../images/webconcept.png");
+const WebConceptPreview = require("../../images/hostpreview.png");
 
 export default function Projects() {
   return (

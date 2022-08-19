@@ -26,11 +26,6 @@
 .about--information__section:first-of-type {
   padding-top: 7rem;
 }
-/*
-.about--information__section:last-of-type {
-  border-bottom: 1px solid lightgray;
-  padding-bottom: 9rem;
-} */
 
 .CTA {
   text-decoration: none;
@@ -39,6 +34,7 @@
   font-size: 2rem;
   margin-top: 3rem;
   text-align: center;
+  padding-bottom: 3rem;
 }
 .CTA-button {
   padding: 1rem 0;
