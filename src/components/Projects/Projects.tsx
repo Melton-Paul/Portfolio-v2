@@ -110,7 +110,8 @@ export default function Projects() {
                   application allows for users to search the web for movies and
                   create a customized user "Watch List". The application works
                   with the OMDb API to search for exact and related titles and
-                  to display all the information pertaining to each movie.
+                  to display all the information pertaining to each movie. This
+                  app also double functions as a Google extension.
                 </p>
               </div>
               <div className={styles["button-container"]}>

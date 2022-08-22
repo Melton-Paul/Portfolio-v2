@@ -28,7 +28,7 @@ body {
   --color-footer: aliceblue;
   --tooltip-text-color: white;
   --tooltip-background-color: black;
-  --tooltip-margin: 30px;
+  --tooltip-margin: 40px;
   --tooltip-arrow-size: 6px;
   color: var(var(--color-text));
   background: var(--color-background);
@@ -49,8 +49,8 @@ body.dark {
 }
 
 main {
-  margin-top: 1rem;
   padding-bottom: 5rem;
+  padding-top: 5rem;
 }
 
 .list {
