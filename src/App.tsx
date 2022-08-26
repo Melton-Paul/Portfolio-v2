@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router";
-import NavBar from "./UI/NavBar";
-import Footer from "./UI/Footer";
+import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
 import WelcomePage from "./pages/Welcome";
 import ContactPage from "./pages/Contact";
 import ReactGA from "react-ga";

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import ToolTip from "./ToolTip/ToolTip";
-const Logo = require("../images/navbrand.png");
+import ToolTip from "../../UI/ToolTip/ToolTip";
+const Logo = require("../../images/navbrand.png");
 
 export default function Footer() {
   function toTop() {

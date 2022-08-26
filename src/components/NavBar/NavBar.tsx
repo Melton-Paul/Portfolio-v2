@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
-import ThemeChange from "./ThemeChange/ThemeChange";
-const Logo = require("../images/navbrand.png");
+import ThemeChange from "../../UI/ThemeChange/ThemeChange";
+const Logo = require("../../images/navbrand.png");
 
 export default function NavBar() {
   return (
