@@ -42,6 +42,9 @@
 .project-information__section h4 {
   margin: 0.5rem 0;
 }
+.project-information__section p {
+  opacity: 0.7;
+}
 
 .project-information__toolbox {
   display: flex;
