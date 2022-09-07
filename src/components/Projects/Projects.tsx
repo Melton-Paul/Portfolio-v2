@@ -39,6 +39,7 @@ export default function Projects() {
                   <li>Javascript</li>
                   <li>Html / CSS</li>
                   <li>React</li>
+                  <li>Google Analytics</li>
                 </ul>
               </div>
               <div className={styles["project-information__section"]}>
