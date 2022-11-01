@@ -6,6 +6,7 @@ const ContactPagePreview = require("../../images/contactbookprev.png");
 const MovieListPreview = require("../../images/movielist.png");
 const QuizzicalPreview = require("../../images/quizzical.png");
 const WebConceptPreview = require("../../images/hostpreview.png");
+const MuseItPreview = require("../../images/museit.png");
 
 export default function Projects() {
   return (
@@ -68,6 +69,66 @@ export default function Projects() {
                 <ToolTip content="Opens Github in new tab">
                   <Button
                     href="https://github.com/Melton-Paul/Twitch-Contact-Book"
+                    target="_blank"
+                    className={styles.button}
+                    link={true}
+                  >
+                    Github Code
+                  </Button>
+                </ToolTip>
+              </div>
+            </div>
+          </Card>
+        </li>
+        <li>
+          <Card className={styles.project}>
+            <div className={styles.img}>
+              <a
+                href="https://MuseIt.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={MuseItPreview}
+                  alt="A preview of Muse It: Music App website."
+                />
+              </a>
+            </div>
+            <div className={styles["project-information"]}>
+              <h3 className={styles["project-title"]}>Muse It Music</h3>
+              <div className={styles["project-information__section"]}>
+                <h4>ToolBox</h4>
+                <ul className={styles["project-information__toolbox"]}>
+                  <li>Typescript</li>
+                  <li>Html / CSS</li>
+                  <li>React</li>
+                  <li>Google Analytics</li>
+                </ul>
+              </div>
+              <div className={styles["project-information__section"]}>
+                <h4>Description</h4>
+                <p>
+                  Listening to music has never been easier. This project is
+                  another single page, server backed application. It gives user
+                  the ability to create playlists, keep track of their recent
+                  songs, search a catalog of songs, and listen in with our
+                  customized audio interface.
+                </p>
+              </div>
+              <div className={styles["button-container"]}>
+                <ToolTip content="Opens Project in new tab">
+                  <Button
+                    href="https://museit.netlify.app/"
+                    target="_blank"
+                    className={styles.button}
+                    link={true}
+                  >
+                    Preview
+                  </Button>
+                </ToolTip>
+                <ToolTip content="Opens Github in new tab">
+                  <Button
+                    href="https://github.com/Melton-Paul/Music-App"
                     target="_blank"
                     className={styles.button}
                     link={true}
